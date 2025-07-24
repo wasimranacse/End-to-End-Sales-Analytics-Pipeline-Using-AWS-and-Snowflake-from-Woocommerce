@@ -1,5 +1,21 @@
 -- models/staging/stg_orders.sql
 
+WITH base_orders AS (
+    -- Load from raw_orders source defined in sources.yml
+    SELECT *
+    FROM {{ source('raw', 'raw_orders') }}
+    WHERE ORDER_ID IS NOT NULL
+),
+
+deduplicated_orders AS (
+    SELECT *,
+           ROW_NUMBER() OVER (
+               PARTITION BY ORDER_ID
+               ORDER BY LOAD_TIMESTAMP DESC
+           ) AS row_num
+    FROM base_orders
+)
+
 SELECT
     -- Convert ORDER_DATE string to formatted date (DD-MM-YYYY)
     TO_CHAR(TO_TIMESTAMP(ORDER_DATE, 'MM/DD/YYYY HH24:MI'), 'DD-MM-YYYY') AS order_date,
@@ -72,6 +88,7 @@ SELECT
     FILENAME,
     LOAD_TIMESTAMP
 
--- Load from raw_orders source defined in sources.yml
-FROM {{ source('raw', 'raw_orders') }}
+FROM deduplicated_orders
+WHERE row_num = 1
+
 

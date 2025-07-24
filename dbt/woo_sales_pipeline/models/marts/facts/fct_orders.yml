@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: fct_orders
+    description: "Fact table for all customer orders"
+    columns:
+      - name: ORDER_ID
+        description: "Unique ID for each order"
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: "Formatted order date"
+      - name: CUSTOMER_TYPE
+        description: "New or returning customer"
