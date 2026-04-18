@@ -74,4 +74,4 @@ License
 This project is licensed under the MIT License. See LICENSE for details.
 
 ## Contact
-Developed by Wasim Rana — reach out via LinkedIn or email for collaboration or questions.
+Developed by Wasim Rana on behalf of Ace — reach out to disclose more details via LinkedIn or email for collaboration or questions.
