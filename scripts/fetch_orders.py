@@ -10,7 +10,6 @@ api_key = os.getenv('WC_API_KEY')
 api_secret = os.getenv('WC_API_SECRET')
 api_url = os.getenv('WC_API_URL')
 
-
 params = {
     'per_page': 100,
     'page': 1

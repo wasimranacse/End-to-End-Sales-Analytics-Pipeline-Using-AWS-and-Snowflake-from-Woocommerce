@@ -1,0 +1,29 @@
+[0m09:49:52.311305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CCF0FF920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CCF471F40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD14F6240>]}
+
+
+============================== 09:49:52.337392 | 09c5aeef-305d-437f-b9a6-23f9d120f0e8 ==============================
+[0m09:49:52.337392 [info ] [MainThread]: Running with dbt=1.9.5
+[0m09:49:52.343867 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\wasim\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init .', 'send_anonymous_usage_stats': 'True'}
+[0m09:50:36.173895 [debug] [MainThread]: Starter project path: C:\Users\wasim\AppData\Local\Programs\Python\Python312\Lib\site-packages\dbt\include\starter_project
+[0m09:50:36.290197 [info ] [MainThread]: 
+Your new dbt project "woo_sales_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:50:36.294216 [info ] [MainThread]: Setting up your profile.
+[0m09:53:08.299100 [info ] [MainThread]: Profile woo_sales_pipeline written to C:\Users\wasim\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:53:08.305520 [debug] [MainThread]: Command `dbt init` succeeded at 09:53:08.303287 after 196.56 seconds
+[0m09:53:08.308617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD1CBF980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CD154F800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CEAE5E0F0>]}
+[0m09:53:08.309440 [debug] [MainThread]: Flushing usage events
+[0m09:53:10.855466 [debug] [MainThread]: An error was encountered while trying to flush usage events
