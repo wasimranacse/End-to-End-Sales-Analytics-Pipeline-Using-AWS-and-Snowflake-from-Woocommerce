@@ -1,0 +1,40 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# dbt
+target/
+dbt_packages/
+logs/
+dbt/logs/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+*.log
+
+
+venv/
+.venv/
+target/
+dbt_packages/
+logs/
+dbt/logs/
+.env
